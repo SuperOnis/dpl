@@ -1,0 +1,30 @@
+Background remover: www.remove.bg
+
+Youtube icon: https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png
+
+
+Discord icon: https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png
+
+Github icon: https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg
+
+Facebook: https://assets.stickpng.com/thumbs/60fea6c83d624000048712b7.png
+
+Instagram: https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png
+
+Windows logo: https://godotengine.org/assets/images/platforms/windows.svg
+
+Linux logo: https://godotengine.org/assets/images/platforms/linux.svg
+
+MacOS logo: https://godotengine.org/assets/images/platforms/macos.svg
+
+Navbar logo: https://godotengine.org/assets/icons/hamburger.svg
+
+Close icon: https://simg.nicepng.com/png/small/242-2425648_close-remove-delete-exit-cross-cancel-trash-comments.png
+
+Arrow: https://icons.iconarchive.com/icons/iconoir-team/iconoir/256/nav-arrow-left-icon.png
+
+Email: https://cdn-icons-png.flaticon.com/256/542/542638.png
+
+Phone: https://img.freepik.com/premium-vector/vector-phone-icon_141130-3871.jpg
+
+Address: https://cdn3.iconfinder.com/data/icons/postal-service-essentials/512/Mail_Address-512.png

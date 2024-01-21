@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Devoted Printing Limited</title>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+        <link type="text/css" rel="stylesheet" href="info-cards.css"/>
+        <link type="text/css" rel="stylesheet" href="navbar.css"/>
+        <link type="text/css" rel="stylesheet" href="footer.css"/>
+        <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- NEEDED -->
+	</head>
+	<body>
+        
+        <!-- <header> 
+            <nav>
+                <ul>
+                    <li id="first-nav-element"><a href="products.html">Products</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li id="last-nav-element" class="anchor-right-menu"><a href="donate.html">Donate</a></li>
+                    <li class="anchor-right-menu"><a href="offer.html">Offers</a></li>
+                </ul>
+            </nav>
+            <a href="index.html"><img src="images/logo_with_name.svg" id="logo"/></a>
+        </header> -->
+
+        <header> 
+            <a href="index.html"><img src="images/logo_with_name.svg" class="logo"/></a>
+            <a onclick="showHideSmallNavbar()"><img src="images/hamburger.svg" class="hamburger"/></a>
+            <nav class="large-navbar">
+                <ul>
+                    <div>
+                        <li><a class="first-nav-element" href="products.html">Products</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </div>
+                    
+                    <div class="right-flex">
+                        <li class="anchor-right-menu"><a class="last-nav-element" href="donate.html">Donate</a></li>
+                        <li class="anchor-right-menu"><a href="offer.html">Offers</a></li>
+                    </div>
+                    
+                    
+                </ul>
+            </nav>
+
+            <nav class="small-navbar">
+                <ul>
+                    <a href="products.html"><li>Products</li></a>
+                    <a href="downloads.html"><li>Downloads</li></a>
+                    <a href="contact.html"><li>Contact Us</li></a>
+                    <a href="donate.html"><li>Donate</li></a>
+                    <a href="offer.html"><li>Offers</li></a>
+                </ul>
+            </nav>
+        </header>
+
+		<main>
+            <!-- <img src="images/product.png" class="background-image"/> -->
+            <div>
+                <div class="background-image">
+                    <h1 class="title">Pointlessness <br/> revolutionised.</h1>
+  		            <p class="caption">
+  		                The <strong>bridge</strong> from digital to physical;
+  		                copy-pasting will never be the same.
+  		            </p>
+                </div>
+                <div>
+                    <h1 class="info-card-title-heading">What do we do?</h1> <!-- INLINE CSS FOLLOWING -->
+                    <div class="styled-info-caption">
+                        <img src="images/logo_with_name.svg"/>
+                        <p>Our goal is to design a product which allows anybody to seamlessy print any text physically, as if it was just a simple copy-paste operation.</p>
+                    </div>
+                    
+                    <h1 class="info-card-title-heading">How do we work?</h1>
+                    <div class="info-card-container">
+                        <div class="info-card">
+                            <img src="images/text.png"/>
+                            <h1>Copying</h1>
+                            <h2>Simply use <strong>CTRL+C</strong> while your text is selected to copy, or <strong>right click</strong> and select <em>"Copy to printer"</em>.</h2>
+                            <p>Symbols will be ommited.</p>
+                        </div>
+                        <div class="info-card">
+                            <img src="images/under.png"/>
+                            <h1>Pasting</h1>
+                            <h2>Extendable stamps located at the bottom of the printer allow any letters or numbers to be printed on any surface.</h2>
+                            <p>Font style and size can be selected when purchasing your printer.</p>
+                        </div>
+                        <div class="info-card">
+                            <img src="images/code.png"/>
+                            <h1>Software</h1>
+                            <h2>DPL's software allows you to effortlessly connect your electronic device with our printers, as by only pressing <strong>CTRL+FN+V</strong>.</h2>
+                            <p>Multiple printers may also be connected for different font sizes or styles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+            <script src="navbar.js"></script>
+		</main>
+
+  	    <footer>
+            <div class="footer-left">
+                <img src="images/logo_with_name.svg"/>
+            </div>
+            <div class="footer-right">
+                <p>© 2023-2024 Arevalo Michael</p>
+            </div>
+            <div class="footer-bottom-left">
+                <p>Making it down here is the true form of dedication.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="https://discord.com" target="_blank"><img src="images/discord-icon.webp"/></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png"/></a>
+                <a href="https://github.com" target="_blank"><img src="images/github-icon.jpg"/></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-white-icon.png"/></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.webp"/></a>
+            </div>
+  	    </footer>
+        
+	</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Devoted Printing Limited</title>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+        <link type="text/css" rel="stylesheet" href="cards.css"/>
+        <link type="text/css" rel="stylesheet" href="radio.css"/>
+        <link type="text/css" rel="stylesheet" href="navbar.css"/>
+        <link type="text/css" rel="stylesheet" href="footer.css"/>
+        <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- NEEDED -->
+	</head>
+	<body class="main_body">
+        
+        <header> 
+            <a href="index.html"><img src="images/logo_with_name.svg" class="logo"/></a>
+            <a onclick="showHideSmallNavbar()"><img src="images/hamburger.svg" class="hamburger"/></a>
+            <nav class="large-navbar">
+                <ul>
+                    <div>
+                        <li><a class="first-nav-element" href="products.html">Products</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </div>
+                    
+                    <div class="right-flex">
+                        <li class="anchor-right-menu"><a class="last-nav-element" href="donate.html">Donate</a></li>
+                        <li class="anchor-right-menu"><a href="offer.html">Offers</a></li>
+                    </div>
+                </ul>
+            </nav>
+
+            <nav class="small-navbar">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="downloads.html"><li>Downloads</li></a>
+                    <a href="contact.html"><li>Contact Us</li></a>
+                    <a href="donate.html"><li>Donate</li></a>
+                    <a href="offer.html"><li>Offers</li></a>
+                </ul>
+            </nav>
+        </header>
+
+		<main>
+            <div class="glow-background">
+                <h1 class="main-text">Choose <strong><em>your</em></strong> style.</h1>
+                <p class="main-text-caption">Everybody's is different. Yours is unique.</p>
+                <!-- <img src="images/product.png"> -->
+                <div class="card-container">
+                    <div class="card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/wavy/0/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Wavy</h1>
+                            <h2>Wavy style</h2>
+                            <p>Subtle waves give an extraordinary look to this printer. Great for a richly decorated environment, especially with RGB lighting.</p>
+                            <a href="#wavy"><button>Select</button></a>
+                        </div>
+                    </div>
+                
+                    <div class="card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/military/0/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Military</h1>
+                            <h2>Military style</h2>
+                            <p>No military-grade enforcements included, yet the classic camouflage pattern makes this style great for indoor and outdoor design.</p>
+                            <a href="#military"><button>Select</button></a>
+                        </div>
+                    </div>
+    
+                    <div class="card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/glass/0/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Glass</h1>
+                            <h2>Glass style</h2>
+                            <p>Transparency... who doesn't want that? This design fits anywhere and looks fabulous wherever it is. Truly printing with style.</p>
+                            <a href="#glass"><button>Select</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- BETTER WAY PLEASE -->
+
+            <div class="small-card-list-container" id="wavy">
+                <h2 class="small-card-caption">Wavy Printers</h2>
+                <div class="small-card-container">
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/wavy/0/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Wavy</h1>
+                            <h2>Blue-White</h2>
+                            <button onclick="selectType('#wavy', 0)">Select</button>
+                        </div>
+                    </div>
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/wavy/1/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Wavy</h1>
+                            <h2>Light blue-Purple</h2>
+                            <button onclick="selectType('#wavy', 1)">Select</button>
+                        </div>
+                    </div>
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/wavy/2/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Wavy</h1>
+                            <h2>Green-Black</h2>
+                            <button onclick="selectType('#wavy', 2)">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="select-type-menu" onmouseleave="deselectType('#wavy')">
+                    <img onclick="closeMenu('#wavy')" class="close-select-type-menu" src="images/close.png"/>
+                    <div class="select-card-container">
+                        <div class="select-card">
+                            <img src="products/wavy/0/whole.png" alt="image"/>
+                            <div class="card-body">
+                                <h1>Type</h1>
+                                <h2 class="card-product-colour">Colour</h2>
+                                <h2 class="card-product-id">ID</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options-menu">
+                        <h1>Select type:</h1>
+                        <!-- <form> -->
+                            <div onmouseover="hoverOption(this, 0)" onmouseleave="unhoverOption(this, 0)" onclick="clickOption(this, 0, '#wavy')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>Whole</p>
+                                <p class="align-right-radio">€ 34</p>
+                                <!-- <br/> -->
+                            </div>
+                            
+                            <div onmouseover="hoverOption(this, 1)" onmouseleave="unhoverOption(this, 1)" onclick="clickOption(this, 1, '#wavy')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>With hole</p>
+                                <p class="align-right-radio">€ 37</p>
+                                <!-- <br/> -->
+                            </div>
+                            
+                            <div onmouseover="hoverOption(this, 2)" onmouseleave="unhoverOption(this, 2)" onclick="clickOption(this, 2, '#wavy')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>Small with tall legs</p>
+                                <p class="align-right-radio">€ 26</p>
+                                <!-- <br/> -->
+                            </div>
+                        <!-- </form> -->
+                        <button class="purchase-button" onclick="purchase('wavy')">Purchase</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="small-card-list-container" id="military">
+                <h2 class="small-card-caption">Military Printers</h2>
+                <div class="small-card-container">
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/military/0/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Military</h1>
+                            <h2>White-Green</h2>
+                            <button onclick="selectType('#military', 0)">Select</button></a>
+                        </div>
+                    </div>
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/military/1/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Military</h1>
+                            <h2>Pink</h2>
+                            <button onclick="selectType('#military', 1)">Select</button></a>
+                        </div>
+                    </div><div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/military/2/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Military</h1>
+                            <h2>Green-Blue</h2>
+                            <button onclick="selectType('#military', 2)">Select</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-type-menu" onmouseleave="deselectType('#military')">
+                    <img onclick="closeMenu('#military')" class="close-select-type-menu" src="images/close.png"/>
+                    <div class="select-card-container">
+                        <div class="select-card">
+                            <img src="products/military/" alt="image"/>
+                            <div class="card-body">
+                                <h1>Type</h1>
+                                <h2 class="card-product-colour">Colour</h2>
+                                <h2 class="card-product-id">ID</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options-menu">
+                        <h1>Select type:</h1>
+                        <!-- <form> -->
+                            <div onmouseover="hoverOption(this, 0)" onmouseleave="unhoverOption(this, 0)" onclick="clickOption(this, 0, '#military')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>Whole</p>
+                                <p class="align-right-radio">€ 34</p>
+                                <!-- <br/> -->
+                            </div>
+                            
+                            <div onmouseover="hoverOption(this, 1)" onmouseleave="unhoverOption(this, 1)" onclick="clickOption(this, 1, '#military')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>With hole</p>
+                                <p class="align-right-radio">€ 37</p>
+                                <!-- <br/> -->
+                            </div>
+                            
+                            <div onmouseover="hoverOption(this, 2)" onmouseleave="unhoverOption(this, 2)" onclick="clickOption(this, 2, '#military')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>Small with tall legs</p>
+                                <p class="align-right-radio">€ 26</p>
+                                <!-- <br/> -->
+                            </div>
+                        <!-- </form> -->
+                        <button class="purchase-button" onclick="purchase('military')">Purchase</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="small-card-list-container" id="glass">
+                <h2 class="small-card-caption">Glass Printers</h2>
+                <div class="small-card-container">
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/glass/0/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Glass</h1>
+                            <h2>Green-Blue</h2>
+                            <button onclick="selectType('#glass', 0)">Select</button></a>
+                        </div>
+                    </div>
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/glass/1/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Glass</h1>
+                            <h2>Purple-Red</h2>
+                            <button onclick="selectType('#glass', 1)">Select</button></a>
+                        </div>
+                    </div>
+                    <div class="small-card" onmouseenter="setButton(this.querySelector('button'))">
+                        <img class="card-img" src="products/glass/2/whole.png" alt="image"/>
+                        <img class="card-nav-arrow" src="images/arrow.png"/>
+                        <div class="card-body">
+                            <h1>Glass</h1>
+                            <h2>Light blue-Yellow</h2>
+                            <button onclick="selectType('#glass', 2)">Select</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-type-menu" onmouseleave="deselectType('#glass')">
+                    <img onclick="closeMenu('#glass')" class="close-select-type-menu" src="images/close.png"/>
+                    <div class="select-card-container">
+                        <div class="select-card">
+                            <img src="products/glass/0/whole.png" alt="image"/>
+                            <div class="card-body">
+                                <h1>Type</h1>
+                                <h2 class="card-product-colour">Colour</h2>
+                                <h2 class="card-product-id">ID</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options-menu">
+                        <h1>Select type:</h1>
+                        <!-- <form> -->
+                            <div onmouseover="hoverOption(this, 0)" onmouseleave="unhoverOption(this, 0)" onclick="clickOption(this, 0, '#glass')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>Whole</p>
+                                <p class="align-right-radio">€ 34</p>
+                                <!-- <br/> -->
+                            </div>
+                            
+                            <div onmouseover="hoverOption(this, 1)" onmouseleave="unhoverOption(this, 1)" onclick="clickOption(this, 1, '#glass')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>With hole</p>
+                                <p class="align-right-radio">€ 37</p>
+                                <!-- <br/> -->
+                            </div>
+                            
+                            <div onmouseover="hoverOption(this, 2)" onmouseleave="unhoverOption(this, 2)" onclick="clickOption(this, 2, '#glass')">
+                                <span></span> <!-- MUST BE FIRST FOR JS TO WORK -->
+                                <p>Small with tall legs</p>
+                                <p class="align-right-radio">€ 26</p>
+                                <!-- <br/> -->
+                            </div>
+                        <!-- </form> -->
+                        <button class="purchase-button" onclick="purchase('glass')">Purchase</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="top-left">
+                <h1 class="main-text">Choose <strong><em>your</em></strong> style.</h1>
+                <p class="caption">Everybody's is different. Yours is unique.</p>
+                
+            </div> -->
+            <script src="products.js"></script>
+            <script src="navbar.js"></script>
+            <script src="cards.js"></script>
+		</main>
+
+  	    <footer>
+            <div class="footer-left">
+                <img src="images/logo_with_name.svg"/>
+            </div>
+            <div class="footer-right">
+                <p>© 2023-2024 Arevalo Michael</p>
+            </div>
+            <div class="footer-bottom-left"> <!-- NEVER CSS IN HTML -->
+                <p>Making it down here is the true form of dedication.</p>
+            </div>
+            <div class="footer-bottom-right"> <!-- NEVER CSS IN HTML -->
+                <a href="https://discord.com" target="_blank"><img src="images/discord-icon.webp"/></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png"/></a>
+                <a href="https://github.com" target="_blank"><img src="images/github-icon.jpg"/></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-white-icon.png"/></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.webp"/></a>
+            </div>
+  	    </footer>
+        
+	</body>
+</html>

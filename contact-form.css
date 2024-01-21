@@ -1,0 +1,102 @@
+.contact-form {
+    overflow: hidden;
+    margin-left: 5vw;
+    margin-bottom: 100px;
+    width: 1000px;
+    height: 400px;
+    /* display: flex;
+    flex-direction: row; */
+    background-color: rgba(22, 48, 54, 0.7);
+    backdrop-filter: blur(15px);
+    border-radius: var(--card-border-radius);
+    padding: 5px;
+}
+
+.contact-form-left {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.contact-form-right {
+    float: right;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: var(--card-border-radius);
+}
+
+.contact-form p {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form button {
+    width: 95%;
+    border-radius: 50vh;
+}
+
+.contact-form input[type="text"], .contact-form textarea {
+    display: flex;
+    justify-content: baseline;
+    width: 90%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: var(--card-border-radius);
+    outline: 1px solid var(--default-background-colour);
+    border: 1px solid var(--default-background-colour);
+}
+
+.contact-form textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+.contact-form input[type="text"]:focus, .contact-form textarea:focus {
+    outline: 1px solid var(--brighter-background-colour);
+    border: 1px solid var(--brighter-background-colour);
+}
+
+.message-input {
+    height: 50%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .contact-form {
+        margin-bottom: 50px;
+        width: 500px;
+        height: 1000px;
+    }
+    .contact-form-left {
+        float: none;
+        height: 50%;
+        width: 100%;
+    }
+    .contact-form-right {
+        float: none;
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .contact-form {
+        margin: 0;
+        padding: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+        width: 100%;
+        height: 1000px;
+    }
+}

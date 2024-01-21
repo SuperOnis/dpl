@@ -1,0 +1,114 @@
+.options-menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* display: flex; */
+    /*justify-content: center;  horisontal centre */
+    /*align-items: center;  vertical centre */
+}
+
+.close-select-type-menu {
+    z-index: 1;
+    padding: 17.5px;
+    width: 30px;
+    display: none;
+    filter: brightness(0) invert(); /* MAKE WHITE */
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    aspect-ratio: 1 / 1;
+}
+
+.close-select-type-menu:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .options-menu { 
+        /* position: absolute; */
+        top: 50vh;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        /* padding: 0;
+        margin: 0; */
+        /* display: flex; */
+        /*justify-content: center;  horisontal centre */
+        /*align-items: center;  vertical centre */
+    }
+
+    .close-select-type-menu {
+        display: unset;
+    }
+
+    .purchase-button {
+        position: absolute;
+        top: -90%;
+        left: 10%;
+        height: 10%;
+    }
+
+    .options-menu div {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.options-menu h1 {
+    margin-left: 10%;
+}
+
+.options-menu p {
+    font-size: 17px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.options-menu div {
+    padding: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* background-color: black; */
+    border-radius: var(--options-menu-border-radius);
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: all .25s ease;
+    align-items: center;
+    display: flex;
+}
+
+.options-menu span {
+    background-color: rgb(148, 204, 216);
+    box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease;
+    border-radius: var(--radio-border-radius); /* circle */
+    display: inline-block;
+    border: 6px solid transparent;
+
+    padding: 2.3%;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+/* .options-menu button {
+    margin-right: 10%;
+} */
+
+.purchase-button {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.align-right-radio {
+    margin-left: auto;
+    margin-right: 6%;
+}

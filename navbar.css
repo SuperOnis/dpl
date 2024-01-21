@@ -1,0 +1,130 @@
+nav {
+    
+    width: 100%;
+    z-index: 1; /* on top, under logo */
+}
+
+.large-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 55px; /* WILL BE CONSTANT FOR EVERY DEVICE */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.large-navbar ul {
+    margin: 0;
+    padding-top: 5px; /* WILL BE CONSTANT FOR EVERY DEVICE */
+    padding-bottom: 5px; /* WILL BE CONSTANT FOR EVERY DEVICE */
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.small-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: 2; /* SMALL NAVBAR LAYER*/
+    display: none;
+    width: 400px;
+    height: 100vh;
+    padding-top: 55px; /* WILL BE CONSTANT FOR EVERY DEVICE, CHANGE IN JS TOO*/
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    backdrop-filter: blur(5px);
+    background-color: rgba(11, 25, 28, 0.9);
+}
+
+@media only screen and (max-width: 700px) {
+    .small-navbar {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.large-navbar ul li {
+    display: inline;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.small-navbar ul li {
+    margin: 2.2vh;
+    /* border-radius: var(--options-menu-border-radius); */
+    /* background-color: var(--default-background-colour); */
+    transition: all .3s ease;
+    padding: 3vh;
+}
+
+.hamburger { /* WILL BE CONSTANT FOR EVERY DEVICE */
+    padding: 17.5px;
+    
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    z-index: 3; /* SAME LAYER AS LOGO, ABOVE SMALL NAVBAR */
+    filter: brightness(0) invert(); /* MAKE WHITE */
+}
+
+.hamburger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+  
+nav ul li :hover, nav ul a li:hover {
+    filter: brightness(115%);
+}
+
+nav ul li :hover {
+    font-style: italic;
+}
+  
+nav ul li a, nav ul a {
+    text-decoration: none;
+    color: white;  
+}
+
+.logo { /* WILL BE CONSTANT FOR EVERY DEVICE */
+    z-index: 3; /* on top */
+    width: auto;
+    height: 50px;
+    margin: 7.5px;
+    position: absolute;
+    left: 10vh;
+    top: 0;
+}
+  
+:hover .logo  {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+  
+:not(:hover) .logo {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.first-nav-element {
+    margin-left: calc(14vw + 5vw);
+}
+  
+.last-nav-element { /* the donate button */
+    margin-right: 10vw;
+}
+
+.right-flex {
+    margin-left: auto;
+}

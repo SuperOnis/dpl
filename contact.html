@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Devoted Printing Limited</title>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+        <link type="text/css" rel="stylesheet" href="navbar.css"/>
+        <link type="text/css" rel="stylesheet" href="footer.css"/>
+        <link type="text/css" rel="stylesheet" href="contact-form.css"/>
+        <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- NEEDED -->
+	</head>
+	<body>
+        
+        <header> 
+            <a href="index.html"><img src="images/logo_with_name.svg" class="logo"/></a>
+            <a onclick="showHideSmallNavbar()"><img src="images/hamburger.svg" class="hamburger"/></a>
+            <nav class="large-navbar">
+                <ul>
+                    <div>
+                        <li><a class="first-nav-element" href="products.html">Products</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </div>
+                    
+                    <div class="right-flex">
+                        <li class="anchor-right-menu"><a class="last-nav-element" href="donate.html">Donate</a></li>
+                        <li class="anchor-right-menu"><a href="offer.html">Offers</a></li>
+                    </div>
+                    
+                    
+                </ul>
+            </nav>
+
+            <nav class="small-navbar">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="products.html"><li>Products</li></a>
+                    <a href="downloads.html"><li>Downloads</li></a>
+                    <a href="donate.html"><li>Donate</li></a>
+                    <a href="offer.html"><li>Offers</li></a>
+                </ul>
+            </nav>
+        </header>
+
+		<main>
+            <div class="glow-background">
+                <h1 class="main-text">Contact Us</h1>
+                <p class="caption">Feel free to ask us any questions</p>
+
+                <div class="contact-form">
+                    <div class="contact-form-left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.1341466499416!2d4.897001311834505!3d52.36798754735679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609be1313dee3%3A0xf80eb45017bfe738!2sStadsloket%20Centre!5e0!3m2!1sen!2snl!4v1705003338049!5m2!1sen!2snl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contact-form-right">
+                        <p>Any requests?</p>
+                        <input type="text" placeholder="Name"/>
+                        <input type="text" placeholder="Email"/>
+                        <textarea type="text" placeholder="Message" class="message-input"></textarea>
+
+                        <button>Submit</button>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="contact-table">
+                <div class="coloured-container">
+                    <div class="left-float">
+                        <h1>Email</h1>
+                        <p>contact@dpl.com</p>
+                    </div>
+                    <div class="right-float">
+                        <img class="fit-logo-image" src="images/email.png"/>
+                    </div>
+                    
+                </div>
+                <div class="coloured-container">
+                    <div class="left-float">
+                        <h1>Phone number</h1>
+                    <p>+31 6 593 423 23</p>
+                    </div>
+                    <div class="right-float">
+                        <img class="fit-logo-image" src="images/phone.png"/>
+                    </div>
+                    
+                </div>
+
+                <div class="coloured-container">
+                    <div class="left-float">
+                        <h1>Postal address</h1>
+                        <p>Amstel 1, 1011 PN Amsterdam</p>
+                    </div>
+                    <div class="right-float">
+                        <img class="fit-logo-image" src="images/address.png"/>
+                    </div>
+                </div>
+            </div>
+            
+            <script src="navbar.js"></script>
+            <script src="contact.js"></script>
+		</main>
+
+  	    <footer>
+            <div class="footer-left">
+                <img src="images/logo_with_name.svg"/>
+            </div>
+            <div class="footer-right">
+                <p>© 2023-2024 Arevalo Michael</p>
+            </div>
+            <div class="footer-bottom-left">
+                <p>Making it down here is the true form of dedication.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="https://discord.com" target="_blank"><img src="images/discord-icon.webp"/></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-icon.png"/></a>
+                <a href="https://github.com" target="_blank"><img src="images/github-icon.jpg"/></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-white-icon.png"/></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-icon.webp"/></a>
+            </div>
+  	    </footer>
+	</body>
+</html>
