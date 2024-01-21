@@ -14,7 +14,7 @@ for (let contactType of contactTypes) { // WILL BREAK ALPHA
 $.ajax({
     type: "POST",
     url: "send.py",
-    data: { param: text}
+    // data: { param: text}
   }).done(function( o ) {
      // do something
   });
