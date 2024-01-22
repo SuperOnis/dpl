@@ -1,2 +1,2 @@
-# dpl.github.io
-Just a useless site.
+# dpl
+Just a useless site about a useless product.
